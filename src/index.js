@@ -1,204 +1,218 @@
 
 const keyLayout = {
   Backquote: {
-    name: 'Backquote', LCaseEng: '`', UCaseEng: '~', LCaseRu: 'ё', UCaseRu: 'Ё', className: 'key',
+    name: 'Backquote', LCaseEN: '`', UCaseEN: '~', LCaseRU: 'ё', UCaseRU: 'Ё', className: 'key',
   },
   Digit1: {
-    name: 'Digit1', LCaseEng: '1', UCaseEng: '!', LCaseRu: '1', UCaseRu: '!', className: 'key',
+    name: 'Digit1', LCaseEN: '1', UCaseEN: '!', LCaseRU: '1', UCaseRU: '!', className: 'key',
   },
   Digit2: {
-    name: 'Digit2', LCaseEng: '2', UCaseEng: '@', LCaseRu: '2', UCaseRu: '"', className: 'key',
+    name: 'Digit2', LCaseEN: '2', UCaseEN: '@', LCaseRU: '2', UCaseRU: '"', className: 'key',
   },
   Digit3: {
-    name: 'Digit3', LCaseEng: '3', UCaseEng: '#', LCaseRu: '3', UCaseRu: '№', className: 'key',
+    name: 'Digit3', LCaseEN: '3', UCaseEN: '#', LCaseRU: '3', UCaseRU: '№', className: 'key',
   },
   Digit4: {
-    name: 'Digit4', LCaseEng: '4', UCaseEng: '$', LCaseRu: '4', UCaseRu: ';', className: 'key',
+    name: 'Digit4', LCaseEN: '4', UCaseEN: '$', LCaseRU: '4', UCaseRU: ';', className: 'key',
   },
   Digit5: {
-    name: 'Digit5', LCaseEng: '5', UCaseEng: '%', LCaseRu: '5', UCaseRu: '%', className: 'key',
+    name: 'Digit5', LCaseEN: '5', UCaseEN: '%', LCaseRU: '5', UCaseRU: '%', className: 'key',
   },
   Digit6: {
-    name: 'Digit6', LCaseEng: '6', UCaseEng: '^', LCaseRu: '6', UCaseRu: ':', className: 'key',
+    name: 'Digit6', LCaseEN: '6', UCaseEN: '^', LCaseRU: '6', UCaseRU: ':', className: 'key',
   },
   Digit7: {
-    name: 'Digit7', LCaseEng: '7', UCaseEng: '&', LCaseRu: '7', UCaseRu: '?', className: 'key',
+    name: 'Digit7', LCaseEN: '7', UCaseEN: '&', LCaseRU: '7', UCaseRU: '?', className: 'key',
   },
   Digit8: {
-    name: 'Digit8', LCaseEng: '8', UCaseEng: '*', LCaseRu: '8', UCaseRu: '*', className: 'key',
+    name: 'Digit8', LCaseEN: '8', UCaseEN: '*', LCaseRU: '8', UCaseRU: '*', className: 'key',
   },
   Digit9: {
-    name: 'Digit9', LCaseEng: '9', UCaseEng: '(', LCaseRu: '9', UCaseRu: '(', className: 'key',
+    name: 'Digit9', LCaseEN: '9', UCaseEN: '(', LCaseRU: '9', UCaseRU: '(', className: 'key',
   },
   Digit0: {
-    name: 'Digit0', LCaseEng: '0', UCaseEng: ')', LCaseRu: '0', UCaseRu: ')', className: 'key',
+    name: 'Digit0', LCaseEN: '0', UCaseEN: ')', LCaseRU: '0', UCaseRU: ')', className: 'key',
   },
   Minus: {
-    name: 'Minus', LCaseEng: '-', UCaseEng: '_', LCaseRu: '-', UCaseRu: '_', className: 'key',
+    name: 'Minus', LCaseEN: '-', UCaseEN: '_', LCaseRU: '-', UCaseRU: '_', className: 'key',
   },
   Equal: {
-    name: 'Equal', LCaseEng: '=', UCaseEng: '+', LCaseRu: '=', UCaseRu: '+', className: 'key',
+    name: 'Equal', LCaseEN: '=', UCaseEN: '+', LCaseRU: '=', UCaseRU: '+', className: 'key',
   },
   Backspace: {
-    name: 'Backspace', LCaseEng: 'Backspace', UCaseEng: 'Backspace', LCaseRu: 'Backspace', UCaseRu: 'Backspace', className: 'key backspace',
+    name: 'Backspace', LCaseEN: 'Backspace', UCaseEN: 'Backspace', LCaseRU: 'Backspace', UCaseRU: 'Backspace', className: 'key backspace',
   },
 
   Tab: {
-    name: 'Tab', LCaseEng: 'Tab', UCaseEng: 'Tab', LCaseRu: 'Tab', UCaseRu: 'Tab', className: 'key tab',
+    name: 'Tab', LCaseEN: 'Tab', UCaseEN: 'Tab', LCaseRU: 'Tab', UCaseRU: 'Tab', className: 'key tab',
   },
   KeyQ: {
-    name: 'KeyQ', LCaseEng: 'q', UCaseEng: 'Q', LCaseRu: 'й', UCaseRu: 'Й', className: 'key',
+    name: 'KeyQ', LCaseEN: 'q', UCaseEN: 'Q', LCaseRU: 'й', UCaseRU: 'Й', className: 'key',
   },
   KeyW: {
-    name: 'KeyW', LCaseEng: 'w', UCaseEng: 'W', LCaseRu: 'ц', UCaseRu: 'Ц', className: 'key',
+    name: 'KeyW', LCaseEN: 'w', UCaseEN: 'W', LCaseRU: 'ц', UCaseRU: 'Ц', className: 'key',
   },
   KeyE: {
-    name: 'KeyE', LCaseEng: 'e', UCaseEng: 'E', LCaseRu: 'у', UCaseRu: 'У', className: 'key',
+    name: 'KeyE', LCaseEN: 'e', UCaseEN: 'E', LCaseRU: 'у', UCaseRU: 'У', className: 'key',
   },
   KeyR: {
-    name: 'KeyR', LCaseEng: 'r', UCaseEng: 'R', LCaseRu: 'к', UCaseRu: 'К', className: 'key',
+    name: 'KeyR', LCaseEN: 'r', UCaseEN: 'R', LCaseRU: 'к', UCaseRU: 'К', className: 'key',
   },
   KeyT: {
-    name: 'KeyT', LCaseEng: 't', UCaseEng: 'T', LCaseRu: 'е', UCaseRu: 'Е', className: 'key',
+    name: 'KeyT', LCaseEN: 't', UCaseEN: 'T', LCaseRU: 'е', UCaseRU: 'Е', className: 'key',
   },
   KeyY: {
-    name: 'KeyY', LCaseEng: 'y', UCaseEng: 'Y', LCaseRu: 'н', UCaseRu: 'Н', className: 'key',
+    name: 'KeyY', LCaseEN: 'y', UCaseEN: 'Y', LCaseRU: 'н', UCaseRU: 'Н', className: 'key',
   },
   KeyU: {
-    name: 'KeyU', LCaseEng: 'u', UCaseEng: 'U', LCaseRu: 'г', UCaseRu: 'Г', className: 'key',
+    name: 'KeyU', LCaseEN: 'u', UCaseEN: 'U', LCaseRU: 'г', UCaseRU: 'Г', className: 'key',
   },
   KeyI: {
-    name: 'KeyI', LCaseEng: 'i', UCaseEng: 'I', LCaseRu: 'ш', UCaseRu: 'Ш', className: 'key',
+    name: 'KeyI', LCaseEN: 'i', UCaseEN: 'I', LCaseRU: 'ш', UCaseRU: 'Ш', className: 'key',
   },
   KeyO: {
-    name: 'KeyO', LCaseEng: 'o', UCaseEng: 'O', LCaseRu: 'щ', UCaseRu: 'Щ', className: 'key',
+    name: 'KeyO', LCaseEN: 'o', UCaseEN: 'O', LCaseRU: 'щ', UCaseRU: 'Щ', className: 'key',
   },
   KeyP: {
-    name: 'KeyP', LCaseEng: 'p', UCaseEng: 'P', LCaseRu: 'з', UCaseRu: 'З', className: 'key',
+    name: 'KeyP', LCaseEN: 'p', UCaseEN: 'P', LCaseRU: 'з', UCaseRU: 'З', className: 'key',
   },
   BracketLeft: {
-    name: 'BracketLeft', LCaseEng: '[', UCaseEng: '{', LCaseRu: 'х', UCaseRu: 'Х', className: 'key',
+    name: 'BracketLeft', LCaseEN: '[', UCaseEN: '{', LCaseRU: 'х', UCaseRU: 'Х', className: 'key',
   },
   BracketRight: {
-    name: 'BracketRight', LCaseEng: ']', UCaseEng: '}', LCaseRu: 'ъ', UCaseRu: 'Ъ', className: 'key',
+    name: 'BracketRight', LCaseEN: ']', UCaseEN: '}', LCaseRU: 'ъ', UCaseRU: 'Ъ', className: 'key',
   },
   Backslash: {
-    name: 'Backslash', LCaseEng: '\\', UCaseEng: '|', LCaseRu: '\\', UCaseRu: '/', className: 'key',
+    name: 'Backslash', LCaseEN: '\\', UCaseEN: '|', LCaseRU: '\\', UCaseRU: '/', className: 'key',
   },
   Delete: {
-    name: 'Delete', LCaseEng: 'DEL', UCaseEng: 'DEL', LCaseRu: 'DEL', UCaseRu: 'DEL', className: 'key del',
+    name: 'Delete', LCaseEN: 'DEL', UCaseEN: 'DEL', LCaseRU: 'DEL', UCaseRU: 'DEL', className: 'key del',
   },
 
   CapsLock: {
-    name: 'CapsLock', LCaseEng: 'CapsLock', UCaseEng: 'CapsLock', LCaseRu: 'CapsLock', UCaseRu: 'CapsLock', className: 'key capsLock',
+    name: 'CapsLock', LCaseEN: 'CapsLock', UCaseEN: 'CapsLock', LCaseRU: 'CapsLock', UCaseRU: 'CapsLock', className: 'key capsLock',
   },
   KeyA: {
-    name: 'KeyA', LCaseEng: 'a', UCaseEng: 'A', LCaseRu: 'ф', UCaseRu: 'Ф', className: 'key',
+    name: 'KeyA', LCaseEN: 'a', UCaseEN: 'A', LCaseRU: 'ф', UCaseRU: 'Ф', className: 'key',
   },
   KeyS: {
-    name: 'KeyS', LCaseEng: 's', UCaseEng: 'S', LCaseRu: 'ы', UCaseRu: 'Ы', className: 'key',
+    name: 'KeyS', LCaseEN: 's', UCaseEN: 'S', LCaseRU: 'ы', UCaseRU: 'Ы', className: 'key',
   },
   KeyD: {
-    name: 'KeyD', LCaseEng: 'd', UCaseEng: 'D', LCaseRu: 'в', UCaseRu: 'В', className: 'key',
+    name: 'KeyD', LCaseEN: 'd', UCaseEN: 'D', LCaseRU: 'в', UCaseRU: 'В', className: 'key',
   },
   KeyF: {
-    name: 'KeyF', LCaseEng: 'f', UCaseEng: 'F', LCaseRu: 'а', UCaseRu: 'А', className: 'key',
+    name: 'KeyF', LCaseEN: 'f', UCaseEN: 'F', LCaseRU: 'а', UCaseRU: 'А', className: 'key',
   },
   KeyG: {
-    name: 'KeyG', LCaseEng: 'g', UCaseEng: 'G', LCaseRu: 'п', UCaseRu: 'П', className: 'key',
+    name: 'KeyG', LCaseEN: 'g', UCaseEN: 'G', LCaseRU: 'п', UCaseRU: 'П', className: 'key',
   },
   KeyH: {
-    name: 'KeyH', LCaseEng: 'h', UCaseEng: 'H', LCaseRu: 'р', UCaseRu: 'Р', className: 'key',
+    name: 'KeyH', LCaseEN: 'h', UCaseEN: 'H', LCaseRU: 'р', UCaseRU: 'Р', className: 'key',
   },
   KeyJ: {
-    name: 'KeyJ', LCaseEng: 'j', UCaseEng: 'J', LCaseRu: 'о', UCaseRu: 'О', className: 'key',
+    name: 'KeyJ', LCaseEN: 'j', UCaseEN: 'J', LCaseRU: 'о', UCaseRU: 'О', className: 'key',
   },
   KeyK: {
-    name: 'KeyK', LCaseEng: 'k', UCaseEng: 'K', LCaseRu: 'л', UCaseRu: 'Л', className: 'key',
+    name: 'KeyK', LCaseEN: 'k', UCaseEN: 'K', LCaseRU: 'л', UCaseRU: 'Л', className: 'key',
   },
   KeyL: {
-    name: 'KeyL', LCaseEng: 'l', UCaseEng: 'L', LCaseRu: 'д', UCaseRu: 'Д', className: 'key',
+    name: 'KeyL', LCaseEN: 'l', UCaseEN: 'L', LCaseRU: 'д', UCaseRU: 'Д', className: 'key',
   },
   Semicolon: {
-    name: 'Semicolon', LCaseEng: ';', UCaseEng: ';', LCaseRu: 'ж', UCaseRu: 'Ж', className: 'key',
+    name: 'Semicolon', LCaseEN: ';', UCaseEN: ';', LCaseRU: 'ж', UCaseRU: 'Ж', className: 'key',
   },
   Quote: {
-    name: 'Quote', LCaseEng: '\'', UCaseEng: '\'', LCaseRu: 'э', UCaseRu: 'Э', className: 'key',
+    name: 'Quote', LCaseEN: '\'', UCaseEN: '\'', LCaseRU: 'э', UCaseRU: 'Э', className: 'key',
   },
   Enter: {
-    name: 'Enter', LCaseEng: 'ENTER', UCaseEng: 'ENTER', LCaseRu: 'ENTER', UCaseRu: 'ENTER', className: 'key enter',
+    name: 'Enter', LCaseEN: 'ENTER', UCaseEN: 'ENTER', LCaseRU: 'ENTER', UCaseRU: 'ENTER', className: 'key enter',
   },
 
   ShiftLeft: {
-    name: 'ShiftLeft', LCaseEng: 'Shift', UCaseEng: 'Shift', LCaseRu: 'Shift', UCaseRu: 'Shift', className: 'key shift_left',
+    name: 'ShiftLeft', LCaseEN: 'Shift', UCaseEN: 'Shift', LCaseRU: 'Shift', UCaseRU: 'Shift', className: 'key shift_left',
   },
   KeyZ: {
-    name: 'KeyZ', LCaseEng: 'z', UCaseEng: 'Z', LCaseRu: 'я', UCaseRu: 'Я', className: 'key',
+    name: 'KeyZ', LCaseEN: 'z', UCaseEN: 'Z', LCaseRU: 'я', UCaseRU: 'Я', className: 'key',
   },
   KeyX: {
-    name: 'KeyX', LCaseEng: 'x', UCaseEng: 'X', LCaseRu: 'ч', UCaseRu: 'Ч', className: 'key',
+    name: 'KeyX', LCaseEN: 'x', UCaseEN: 'X', LCaseRU: 'ч', UCaseRU: 'Ч', className: 'key',
   },
   KeyC: {
-    name: 'KeyC', LCaseEng: 'c', UCaseEng: 'C', LCaseRu: 'с', UCaseRu: 'С', className: 'key',
+    name: 'KeyC', LCaseEN: 'c', UCaseEN: 'C', LCaseRU: 'с', UCaseRU: 'С', className: 'key',
   },
   KeyV: {
-    name: 'KeyV', LCaseEng: 'v', UCaseEng: 'V', LCaseRu: 'м', UCaseRu: 'М', className: 'key',
+    name: 'KeyV', LCaseEN: 'v', UCaseEN: 'V', LCaseRU: 'м', UCaseRU: 'М', className: 'key',
   },
   KeyB: {
-    name: 'KeyB', LCaseEng: 'b', UCaseEng: 'B', LCaseRu: 'и', UCaseRu: 'И', className: 'key',
+    name: 'KeyB', LCaseEN: 'b', UCaseEN: 'B', LCaseRU: 'и', UCaseRU: 'И', className: 'key',
   },
   KeyN: {
-    name: 'KeyN', LCaseEng: 'n', UCaseEng: 'N', LCaseRu: 'т', UCaseRu: 'Т', className: 'key',
+    name: 'KeyN', LCaseEN: 'n', UCaseEN: 'N', LCaseRU: 'т', UCaseRU: 'Т', className: 'key',
   },
   KeyM: {
-    name: 'KeyM', LCaseEng: 'm', UCaseEng: 'M', LCaseRu: 'ь', UCaseRu: 'Ь', className: 'key',
+    name: 'KeyM', LCaseEN: 'm', UCaseEN: 'M', LCaseRU: 'ь', UCaseRU: 'Ь', className: 'key',
   },
   Comma: {
-    name: 'Comma', LCaseEng: ',', UCaseEng: ',', LCaseRu: 'б', UCaseRu: 'Б', className: 'key',
+    name: 'Comma', LCaseEN: ',', UCaseEN: ',', LCaseRU: 'б', UCaseRU: 'Б', className: 'key',
   },
   Period: {
-    name: 'Period', LCaseEng: '.', UCaseEng: '.', LCaseRu: 'ю', UCaseRu: 'Ю', className: 'key',
+    name: 'Period', LCaseEN: '.', UCaseEN: '.', LCaseRU: 'ю', UCaseRU: 'Ю', className: 'key',
   },
   Slash: {
-    name: 'Slash', LCaseEng: '/', UCaseEng: '/', LCaseRu: '.', UCaseRu: '.', className: 'key',
+    name: 'Slash', LCaseEN: '/', UCaseEN: '/', LCaseRU: '.', UCaseRU: '.', className: 'key',
   },
   ArrowUp: {
-    name: 'ArrowUp', LCaseEng: '▲', UCaseEng: '▲', LCaseRu: '▲', UCaseRu: '▲', className: 'key arrow_up',
+    name: 'ArrowUp', LCaseEN: '▲', UCaseEN: '▲', LCaseRU: '▲', UCaseRU: '▲', className: 'key arrow_up',
   },
   ShiftRight: {
-    name: 'ShiftRight', LCaseEng: 'Shift', UCaseEng: 'Shift', LCaseRu: 'Shift', UCaseRu: 'Shift', className: 'key shift_right',
+    name: 'ShiftRight', LCaseEN: 'Shift', UCaseEN: 'Shift', LCaseRU: 'Shift', UCaseRU: 'Shift', className: 'key shift_right',
   },
 
   ControlLeft: {
-    name: 'ControlLeft', LCaseEng: 'Ctrl', UCaseEng: 'Ctrl', LCaseRu: 'Ctrl', UCaseRu: 'Ctrl', className: 'key control_left',
+    name: 'ControlLeft', LCaseEN: 'Ctrl', UCaseEN: 'Ctrl', LCaseRU: 'Ctrl', UCaseRU: 'Ctrl', className: 'key control_left',
   },
   MetaLeft: {
-    name: 'MetaLeft', LCaseEng: 'Win', UCaseEng: 'Win', LCaseRu: 'Win', UCaseRu: 'Win', className: 'key meta_left',
+    name: 'MetaLeft', LCaseEN: 'Win', UCaseEN: 'Win', LCaseRU: 'Win', UCaseRU: 'Win', className: 'key meta_left',
   },
   AltLeft: {
-    name: 'AltLeft', LCaseEng: 'Alt', UCaseEng: 'Alt', LCaseRu: 'Alt', UCaseRu: 'Alt', className: 'key alt_left',
+    name: 'AltLeft', LCaseEN: 'Alt', UCaseEN: 'Alt', LCaseRU: 'Alt', UCaseRU: 'Alt', className: 'key alt_left',
   },
   Space: {
-    name: 'Space', LCaseEng: ' ', UCaseEng: ' ', LCaseRu: ' ', UCaseRu: ' ', className: 'key space',
+    name: 'Space', LCaseEN: ' ', UCaseEN: ' ', LCaseRU: ' ', UCaseRU: ' ', className: 'key space',
   },
   AltRight: {
-    name: 'AltRight', LCaseEng: 'Alt', UCaseEng: 'Alt', LCaseRu: 'Alt', UCaseRu: 'Alt', className: 'key alt_right',
+    name: 'AltRight', LCaseEN: 'Alt', UCaseEN: 'Alt', LCaseRU: 'Alt', UCaseRU: 'Alt', className: 'key alt_right',
   },
   ArrowLeft: {
-    name: 'ArrowLeft', LCaseEng: '◄', UCaseEng: '◄', LCaseRu: '◄', UCaseRu: '◄', className: 'key arrow_left',
+    name: 'ArrowLeft', LCaseEN: '◄', UCaseEN: '◄', LCaseRU: '◄', UCaseRU: '◄', className: 'key arrow_left',
   },
   ArrowDown: {
-    name: 'ArrowDown', LCaseEng: '▼', UCaseEng: '▼', LCaseRu: '▼', UCaseRu: '▼', className: 'key arrow_down',
+    name: 'ArrowDown', LCaseEN: '▼', UCaseEN: '▼', LCaseRU: '▼', UCaseRU: '▼', className: 'key arrow_down',
   },
   ArrowRight: {
-    name: 'ArrowRight', LCaseEng: '►', UCaseEng: '►', LCaseRu: '►', UCaseRu: '►', className: 'key arrow_right',
+    name: 'ArrowRight', LCaseEN: '►', UCaseEN: '►', LCaseRU: '►', UCaseRU: '►', className: 'key arrow_right',
   },
   ControlRight: {
-    name: 'ControlRight', LCaseEng: 'Ctrl', UCaseEng: 'Ctrl', LCaseRu: 'Ctrl', UCaseRu: 'Ctrl', className: 'key control_right',
+    name: 'ControlRight', LCaseEN: 'Ctrl', UCaseEN: 'Ctrl', LCaseRU: 'Ctrl', UCaseRU: 'Ctrl', className: 'key control_right',
   },
 };
 
+const CAPSLOCK = 'CapsLock';
+const SHIFT_LEFT = 'ShiftLeft';
+const SHIFT_RIGHT = 'ShiftRight';
+const META_LEFT = 'MetaLeft';
+
 const languages = ['EN', 'RU'];
+
+const caseModifier = {
+  isShift: false,
+  isCapslock: false,
+};
+
+const toggleLanguage = ['AltLeft', 'ControlLeft'];
+
+const pressedKeys = new Set();
 
 let currentLang = (localStorage.getItem('keyboardLanguage') === null)
   ? languages[0] : localStorage.getItem('keyboardLanguage');
@@ -220,7 +234,12 @@ keyboard.id = 'keyboard';
 keyboard.className = 'keyboard';
 wrapper.append(keyboard);
 
-let langCase = (currentLang === 'EN') ? 'LCaseEng' : 'LCaseRu';
+const notes = document.createElement('div');
+notes.innerText = 'Сделано на win10. Переключение языка - Alt+Ctrl (left)';
+notes.className = 'keyboard';
+wrapper.append(notes);
+
+const langCase = (currentLang === 'EN') ? 'LCaseEN' : 'LCaseRU';
 Object.keys(keyLayout).forEach((key) => {
   const keyButton = document.createElement('button');
   keyButton.type = 'button';
@@ -232,20 +251,245 @@ Object.keys(keyLayout).forEach((key) => {
 
 const keyButtons = document.querySelectorAll('.key');
 
-document.addEventListener('keydown', (evt) => {
-  if (evt.code === 'ControlRight') {
-    const currentIndex = languages.indexOf(currentLang);
-    const nextIndex = (currentIndex + 1) % languages.length;
-    currentLang = languages[nextIndex];
+function getLang(current) {
+  const currentIndex = languages.indexOf(current);
+  const nextIndex = (currentIndex + 1) % languages.length;
+  return languages[nextIndex];
+}
 
-    let langCase = (currentLang === 'EN') ? 'LCaseEng' : 'LCaseRu';
-    keyButtons.forEach((key) => {
-      const id = key.id;
-      key.textContent = keyLayout[id][langCase];
-    });
+function getKeyCase(capsLock, shift, lang) {
+  const { 0: EN, 1: RU } = languages;
+  switch (true) {
+    case (lang === RU) && capsLock:
+      return shift ? 'LCaseRU' : 'UCaseRU';
+    case (lang === RU) && !capsLock:
+      return shift ? 'UCaseRU' : 'LCaseRU';
+    case (lang === EN) && capsLock:
+      return shift ? 'LCaseEN' : 'UCaseEN';
+    case (lang === EN) && !capsLock:
+      return shift ? 'UCaseEN' : 'LCaseEN';
+    default:
+      throw new Error('no more cases');
+  }
+}
+
+function redrawCases() {
+  const { isShift, isCapslock } = caseModifier;
+  const keyCase = getKeyCase(isCapslock, isShift, currentLang);
+  keyButtons.forEach((btn) => {
+    const key = btn;
+    const { id } = key;
+    key.textContent = keyLayout[id][keyCase];
+  });
+}
+
+function onKeyPressed(char) {
+  const { selectionStart, selectionEnd, value } = input;
+
+  if (selectionStart !== selectionEnd) {
+    input.value = value.slice(0, selectionStart) + char + value.slice(selectionEnd);
+  } else {
+    input.value = value.slice(0, selectionStart) + char + value.slice(selectionStart);
   }
 
+  input.selectionStart = selectionStart + 1;
+  input.selectionEnd = selectionStart + 1;
+}
+
+function onTabPressed() {
+  onKeyPressed('\t');
+}
+
+function onEnterPressed() {
+  onKeyPressed('\n');
+}
+
+function onBackspacePressed() {
+  const { selectionStart, selectionEnd, value } = input;
+
+  if (selectionStart !== selectionEnd) {
+    input.value = value.slice(0, selectionStart) + value.slice(selectionEnd);
+    input.selectionStart = selectionStart;
+  } else {
+    input.value = value.slice(0, selectionStart - 1) + value.slice(selectionStart);
+    input.selectionStart = selectionStart - 1;
+  }
+
+  input.selectionEnd = selectionStart - 1;
+}
+
+function onDeletePressed() {
+  const { selectionStart, selectionEnd, value } = input;
+
+  if (selectionStart !== selectionEnd) {
+    input.value = value.slice(0, selectionStart) + value.slice(selectionEnd);
+  } else {
+    input.value = value.slice(0, selectionStart) + value.slice(selectionStart + 1);
+  }
+
+  input.selectionStart = selectionStart;
+  input.selectionEnd = selectionStart;
+}
+
+function printKey(key) {
+  const { textContent, id } = key;
+  switch (id) {
+    case 'Backspace':
+      onBackspacePressed();
+      break;
+    case 'Tab':
+      onTabPressed();
+      break;
+    case 'Delete':
+      onDeletePressed();
+      break;
+    case 'Enter':
+      onEnterPressed();
+      break;
+    case 'ControlLeft':
+      break;
+    case 'AltLeft':
+      break;
+    case 'AltRight':
+      break;
+    case 'ControlRight':
+      break;
+    default:
+      onKeyPressed(textContent);
+  }
+}
+
+function toggleActive(btn, bool) {
+  btn.classList.toggle('active', bool);
+}
+
+function onMousedownEvent(target) {
+  const { id } = target;
+  let prev;
+  let lang;
+
+  switch (id) {
+    case CAPSLOCK:
+      prev = caseModifier.isCapslock;
+      caseModifier.isCapslock = !prev;
+      toggleActive(target, !prev);
+      redrawCases();
+      break;
+    case SHIFT_LEFT:
+      prev = caseModifier.isShift;
+      caseModifier.isShift = !prev;
+      redrawCases();
+      break;
+    case SHIFT_RIGHT:
+      prev = caseModifier.isShift;
+      caseModifier.isShift = !prev;
+      redrawCases();
+      break;
+    case META_LEFT:
+      lang = getLang(currentLang);
+      currentLang = lang;
+      redrawCases();
+      break;
+    default:
+      printKey(target);
+  }
+}
+
+function getKeyById(id) {
+  let btnIndex = 0;
+
+  keyButtons.forEach((btn, index) => {
+    if (btn.id === id) {
+      btnIndex = index;
+    }
+  });
+
+  return keyButtons[btnIndex];
+}
+
+function isLangToggle() {
+  let isToggle = true;
+
+  toggleLanguage.forEach((code) => {
+    if (!pressedKeys.has(code)) {
+      isToggle = false;
+    }
+  });
+
+  if (isToggle) {
+    const lang = getLang(currentLang);
+    currentLang = lang;
+    redrawCases();
+
+    pressedKeys.clear();
+  }
+}
+
+keyboard.addEventListener('mousedown', (evt) => {
+  if (evt.target.tagName !== 'BUTTON') return;
+  const { target } = evt;
+  onMousedownEvent(target);
+  input.focus();
+});
+
+keyboard.addEventListener('mouseup', (evt) => {
+  const { id } = evt.target;
+
+  if (id === 'ShiftLeft' || id === 'ShiftRight') {
+    caseModifier.isShift = false;
+    redrawCases();
+  }
+
+  input.focus();
+});
+
+keyboard.addEventListener('mouseout', (evt) => {
+  const { id } = evt.target;
+
+  if (id === 'ShiftLeft' || id === 'ShiftRight') {
+    caseModifier.isShift = false;
+    redrawCases();
+  }
+
+  input.focus();
+});
+
+document.addEventListener('keydown', (evt) => {
+  const { code } = evt;
+
+  if (code === 'ShiftLeft'
+    || code === 'ShiftRight'
+    || code === 'CapsLock'
+    || code === 'ControlLeft'
+    || code === 'ControlRight'
+    || code === 'AltLeft'
+    || code === 'AltRight') {
+    if (evt.repeat === true) return;
+  }
+
+  pressedKeys.add(code);
+  isLangToggle();
+
+  const btn = getKeyById(code);
+  toggleActive(btn, true);
+  onMousedownEvent(btn);
+
   evt.preventDefault();
+});
+
+document.addEventListener('keyup', (evt) => {
+  const { code } = evt;
+  pressedKeys.delete(code);
+
+  if (code === 'ShiftLeft' || code === 'ShiftRight') {
+    caseModifier.isShift = false;
+    redrawCases();
+  }
+
+  const btn = getKeyById(code);
+  if (code !== 'CapsLock') {
+    toggleActive(btn, false);
+  }
 });
 
 window.addEventListener('beforeunload', () => {
