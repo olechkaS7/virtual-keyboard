@@ -331,6 +331,30 @@ function onDeletePressed() {
   input.selectionEnd = selectionStart;
 }
 
+function onArrowLeftPressed() {
+  const { ArrowLeft, selectionStart, selectionEnd } = input;
+
+  if (selectionStart !== selectionEnd) {
+      input.selectionStart = selectionEnd;
+    } else {
+      input.selectionStart = selectionStart - 1;
+    }
+
+    input.selectionEnd = input.selectionStart;
+}
+
+function onArrowRightPressed() {
+  const { ArrowRight, selectionStart, selectionEnd } = input;
+
+  if (selectionStart !== selectionEnd) {
+    input.selectionStart = selectionEnd;
+  } else {
+    input.selectionStart = selectionStart + 1;
+  }
+
+  input.selectionEnd = input.selectionStart;
+}
+
 function printKey(key) {
   const { textContent, id } = key;
   switch (id) {
@@ -354,7 +378,19 @@ function printKey(key) {
       break;
     case 'ControlRight':
       break;
-    default:
+    case 'ArrowLeft':
+      onArrowLeftPressed();
+      break;
+    case 'ArrowRight':
+      onArrowRightPressed();
+      break;
+    // case 'ArrowUp':
+    //   onArrowUpPressed();
+    //   break;
+    // case 'ArrowDown':
+    //   onArrowDownPressed();
+    //   break;
+      default:
       onKeyPressed(textContent);
   }
 }
@@ -464,7 +500,7 @@ document.addEventListener('keydown', (evt) => {
     || code === 'ControlRight'
     || code === 'AltLeft'
     || code === 'AltRight') {
-    if (evt.repeat === true) return;
+  if (evt.repeat === true) return;
   }
 
   pressedKeys.add(code);
