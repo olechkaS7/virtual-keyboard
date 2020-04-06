@@ -235,8 +235,8 @@ keyboard.className = 'keyboard';
 wrapper.append(keyboard);
 
 const notes = document.createElement('div');
-notes.innerText = 'Сделано на win10. Переключение языка - Alt+Ctrl (left)';
-notes.className = 'keyboard';
+notes.innerText = ' Для переключения языка комбинация: Ctr+lAlt. Клавиатура создана в операционной системе Windows 10.';
+notes.className = 'notes';
 wrapper.append(notes);
 
 const langCase = (currentLang === 'EN') ? 'LCaseEN' : 'LCaseRU';
