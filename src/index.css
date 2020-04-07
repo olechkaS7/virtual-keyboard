@@ -17,19 +17,18 @@ body {
 .input {
   display: block;
   width: 85%;
-  height: 70%;
   margin: 0 auto 2%;
-  padding: 10px;
+  padding: 20px;
   font-size: 18px;
   color: rgb(0, 0, 0);
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(207, 203, 203, 0.8);
   border-radius: 5px;
   box-shadow: 4px 5px 5px #690606;
   resize: none;
 }
 
 .keyboard {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -130,3 +129,4 @@ body {
   color: rgb(255, 255, 255);
   text-align: center;
 }
+

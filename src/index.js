@@ -307,15 +307,22 @@ function onEnterPressed() {
 function onBackspacePressed() {
   const { selectionStart, selectionEnd, value } = input;
 
-  if (selectionStart !== selectionEnd) {
+  if ((selectionStart !== selectionEnd) && (selectionStart !== 0)) {
     input.value = value.slice(0, selectionStart) + value.slice(selectionEnd);
     input.selectionStart = selectionStart;
-  } else {
-    input.value = value.slice(0, selectionStart - 1) + value.slice(selectionStart);
+    input.selectionEnd = selectionStart;
+  } else if ((selectionStart !== selectionEnd) && (selectionStart === 0)) {
+    input.value = value.slice(selectionEnd);
+    input.selectionStart = 0;
+    input.selectionEnd = 0;
+  } else if (selectionStart !== 0) {
+    input.value = value.slice(0, selectionStart - 1) + value.slice(selectionEnd);
     input.selectionStart = selectionStart - 1;
+    input.selectionEnd = selectionStart - 1;
+  } else {
+    input.selectionStart = 0;
+    input.selectionEnd = 0;
   }
-
-  input.selectionEnd = selectionStart - 1;
 }
 
 function onDeletePressed() {
@@ -332,19 +339,22 @@ function onDeletePressed() {
 }
 
 function onArrowLeftPressed() {
-  const { ArrowLeft, selectionStart, selectionEnd } = input;
+  const { selectionStart, selectionEnd } = input;
 
-  if (selectionStart !== selectionEnd) {
-      input.selectionStart = selectionEnd;
-    } else {
-      input.selectionStart = selectionStart - 1;
-    }
-
+  if ((selectionStart !== selectionEnd) && (selectionStart !== 0)) {
+    input.selectionStart = selectionStart;
     input.selectionEnd = input.selectionStart;
+  } else if (selectionStart !== 0) {
+    input.selectionStart = selectionStart - 1;
+    input.selectionEnd = selectionStart - 1;
+  } else {
+    input.selectionStart = 0;
+    input.selectionEnd = 0;
+  }
 }
 
 function onArrowRightPressed() {
-  const { ArrowRight, selectionStart, selectionEnd } = input;
+  const { selectionStart, selectionEnd } = input;
 
   if (selectionStart !== selectionEnd) {
     input.selectionStart = selectionEnd;
@@ -384,13 +394,7 @@ function printKey(key) {
     case 'ArrowRight':
       onArrowRightPressed();
       break;
-    // case 'ArrowUp':
-    //   onArrowUpPressed();
-    //   break;
-    // case 'ArrowDown':
-    //   onArrowDownPressed();
-    //   break;
-      default:
+    default:
       onKeyPressed(textContent);
   }
 }
@@ -500,7 +504,7 @@ document.addEventListener('keydown', (evt) => {
     || code === 'ControlRight'
     || code === 'AltLeft'
     || code === 'AltRight') {
-  if (evt.repeat === true) return;
+    if (evt.repeat === true) return;
   }
 
   pressedKeys.add(code);
@@ -526,6 +530,10 @@ document.addEventListener('keyup', (evt) => {
   if (code !== 'CapsLock') {
     toggleActive(btn, false);
   }
+});
+
+input.addEventListener('blur', () => {
+  input.focus();
 });
 
 window.addEventListener('beforeunload', () => {
